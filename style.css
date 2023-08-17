@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* style for top quarter of page */
+/* style for sec-1 */
 
 body,
 .header,
@@ -82,4 +82,39 @@ p {
 
 .right-img {
   flex: 1;
+}
+
+/* style for sec-2 */
+
+.info,
+.info-images,
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+  display:flex;
+}
+
+.info,
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+  flex-direction: column;
+}
+
+.info {
+  padding: 200px;
+  padding-top: 0px;
+}
+
+.info-images {
+
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+  max-width: 200px;
 }
