@@ -3,20 +3,26 @@
   padding: 0;
 }
 
-/* style for sec-1 */
+/* style for sec-1 / header */
 
 body,
 .header,
 .nav, 
 .header-body,
-.links,
-.right-img {
+.links {
   display: flex;
 }
 
 body,
 .header {
+  box-sizing: border-box;
   flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  font-family: Roboto, "Times New Roman", sans-serif;
+  gap: 5%;
 }
 
 .header-body,
@@ -24,22 +30,16 @@ body,
   justify-content: space-between;
 }
 
-body {
-  height: 100vh;
-  font-family: Roboto, "Times New Roman", sans-serif;
-}
-
 .header {
   background-color: #1f2937;
-  padding: 200px;
-  padding-top: 16px;
+  padding: 16px 20% 5%;
 }
 
 .nav {
   padding-bottom: 64px;
 }
 
-.logo {
+.header-text {
   font-size: 24px;
   font-weight: 700;
   color: #f9faf8;
@@ -56,14 +56,15 @@ a {
   gap: 16px;
 }
 
-.main-text {
+.text {
   font-size: 48px;
   font-weight: bold;
   color:#f9faf8;
 }
 
 .header-body {
-  gap: 24px;
+  width: 100%;
+  gap: 48px;
   align-items: center;
 }
 
@@ -80,41 +81,114 @@ p {
   background-color: #3882f6;
 }
 
-.right-img {
+.body,
+.resize {
   flex: 1;
+  min-width: 0;
 }
 
-/* style for sec-2 */
+.resize {
+  width: 100px;
+  height: auto;
+}
+
+/* style for sec-2 / info */
 
 .info,
 .info-images,
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
+.info-img {
   display:flex;
 }
 
 .info,
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
+.info-img {
   flex-direction: column;
 }
 
 .info {
-  padding: 200px;
-  padding-top: 0px;
+  align-items: center;
+  padding: 0px 25% 5%;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 50px;
 }
 
 .info-images {
-
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
 }
 
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
-  max-width: 200px;
+.info-img {
+  display: flex;
+  flex: 1;
+  min-width: 100px;
+  width:100px;
+  height: auto;
+}
+
+.img-text {
+  text-align:center;
+}
+
+/* style for sec-3 / quote */
+.sec-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 25%;
+  background-color: #e5e7eb;
+}
+.quote,
+.author {
+  font-size: 36px;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.author {
+  align-self:flex-end;
+  font-weight: bold;
+}
+
+/* Style for section 4 (sign up) */
+.sec-4 {
+  display: flex;
+  margin: 5% 20%;
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 40px 7%;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-two {
+  font-weight: bold;
+  border-style:solid;
+  border-color: white;
+  background-color:#3882f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 16px;
+}
+
+/* style for footer */
+
+.footer {
+  display: flex;
+  background-color: #1f2937;
+  padding: 2.5% 0px;
+  justify-content: center;
+  align-items: center;
 }
